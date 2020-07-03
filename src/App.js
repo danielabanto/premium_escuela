@@ -15,11 +15,11 @@ function App() {
       <div className="container">
         <Menu />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contacto" component={Contacto} />
-          <Route exact path="/servicios" component={Servicios} />
-          <Route exact path="/somos" component={Somos} />
-          <Route exact path="/ubicanos" component={Ubicanos} />
+          <Route exact path="/premium_escuela/dist/" component={Home} />
+          <Route exact path="/premium_escuela/dist/contacto" component={Contacto} />
+          <Route exact path="/premium_escuela/dist/servicios" component={Servicios} />
+          <Route exact path="/premium_escuela/dist/somos" component={Somos} />
+          <Route exact path="/premium_escuela/dist/ubicanos" component={Ubicanos} />
         </Switch>
       </div>
     </BrowserRouter>
