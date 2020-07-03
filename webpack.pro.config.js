@@ -14,7 +14,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].[hash].js',
-        publicPath: 'http://localhost:3001',
+        publicPath: 'https://danielabanto.github.io/premium_escuela/dist',
         chunkFilename: 'js/[id].[chunkhash].js'
     },
     resolve: {
@@ -80,10 +80,12 @@ module.exports = {
         new AddAssetHtmlPlugin({
             filepath: path.resolve(__dirname,'dist/js/*.dll.js'),
             outputPath: 'js',
-            publicPath: 'http://localhost:3001/js'
+            publicPath: 'https://danielabanto.github.io/premium_escuela/dist/js'
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: ['**/app.*'],
         })
     ],
 }
+
+//Usualmente http://localhost:3001/  por el json-server pero ahora en github
