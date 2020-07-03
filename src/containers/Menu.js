@@ -9,11 +9,11 @@ const Menu = () => {
             </header>
             <div className="navbar">
             <ul>
-                <li><Link to="https://danielabanto.github.io/premium_escuela/dist/">Home</Link></li>
-                <li><Link to="https://danielabanto.github.io/premium_escuela/dist/somos">Quienes somos</Link></li>
-                <li><Link to="https://danielabanto.github.io/premium_escuela/dist/servicios">Nuestros servicios</Link></li>
-                <li><Link to="https://danielabanto.github.io/premium_escuela/dist/ubicanos">Ubicanos</Link></li>
-                <li><Link to="https://danielabanto.github.io/premium_escuela/dist/contacto">Contacto</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/somos">Quienes somos</Link></li>
+                <li><Link to="/servicios">Nuestros servicios</Link></li>
+                <li><Link to="/ubicanos">Ubicanos</Link></li>
+                <li><Link to="/contacto">Contacto</Link></li>
             </ul>
             </div>
             <h2 className="gray"><i>...En construcción...</i></h2>
