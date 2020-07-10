@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Menu />
-      <div className="container">
+      <div className="container-fluid">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/servicios" component={Servicios} />
