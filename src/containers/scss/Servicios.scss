@@ -1,0 +1,31 @@
+.Servicios_container{
+    background-color: lightgreen;
+    margin: 30px auto;
+    padding: 20px;
+}
+.Servicios_container h2{
+    text-align: center;
+}
+.Servicios_container_tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.Servicios_tarjeta {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.87);
+    padding: 20px 10px;
+}
+.Servicios_tarjeta h3{
+    text-align: center;
+}
+.Servicios_tarjeta p{
+    
+}
+.Servicios_tarjeta ul{
+
+}
+.Servicios_tarjeta ul li{
+
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Menu.scss'
+import './scss/Menu.scss'
 
-const Menu = () => {
+const Menu = (props) => {
     return(
         <React.Fragment>
             <header>
@@ -19,6 +19,8 @@ const Menu = () => {
                     <li><Link to="/ubicanos">UBICANOS</Link></li>
                 </ul>
             </div>
+            {props.children}
+            <h2>Hola! Aca se construira el footer</h2>
         </React.Fragment>
     )
 }

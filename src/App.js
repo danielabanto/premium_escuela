@@ -11,14 +11,17 @@ import Menu from './containers/Menu.js';
 function App() {
   return (
     <BrowserRouter>
-      <Menu />
-      <div className="container-fluid">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/servicios" component={Servicios} />
-          <Route exact path="/somos" component={Somos} />
-          <Route exact path="/ubicanos" component={Ubicanos} />
-        </Switch>
+      <div className="container_full">
+        <Menu>
+        <div className="container_page">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/servicios" component={Servicios} />
+            <Route exact path="/somos" component={Somos} />
+            <Route exact path="/ubicanos" component={Ubicanos} />
+          </Switch>
+        </div>
+        </Menu>
       </div>
     </BrowserRouter>
   );
