@@ -1,9 +1,28 @@
+.Ubicanos_container {
+  background-color: rgb(219, 170, 170);
+  padding: 40px 20px;
+}
+.Ubicanos_container{
+    text-align: center;
+}
+.Ubicanos_container h2 {
+    font-size: 42px;
+    padding: 20px;
+}
+.Ubicanos_container p{
+  font-size: 30px;
+  padding: 20px;
+}
 .iframe_gmaps{
     width: 600px; 
     height: 450px;
   }
 
 .Iframe_container {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.iframe_gmaps {
+  width: 90%;
+  height: 500px;
 }

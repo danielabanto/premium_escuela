@@ -1,14 +1,18 @@
 .Somos_container {
-    background-color: lightblue;
-    margin: 40px auto;
     display: flex;
-    padding: 15px 20px;
+    align-items: center;
+    background-color: lightblue;
+    display: flex;
+    padding: 50px 20px;
 }
 .Somos_img {
-    width: 600px;
+    width: 500px;
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
     
 }
 .Somos_p {
-    font-size: 25px;
-    padding-left: 15px;
+    font-size: 32px;
+    padding: 30px 40px 70px 40px;
 }

@@ -3,20 +3,23 @@ import Loader from './../assets/Loader'
 import './scss/Ubicanos.scss'
 
 class Ubicanos extends React.Component {
-    state = {
-        necesario: true
+    constructor(props) {
+        super(props)
+        this.state = { loading: true }
     }
     componentDidMount() {
         const google_maps = document.getElementById('google_maps');
         google_maps.addEventListener('load', ()=> {
-            this.setState.necesario = false
+            this.setState({
+                loading: false
+            })
         })
     }
     render(){
-        console.log(this.state.necesario)
         return(
-            <React.Fragment>
-                {this.state.necesario && <Loader/>}
+            <div className="Ubicanos_container">
+                <h2>¡Ubícanos!</h2>
+                {this.state.loading && <Loader/>}
                 <div className="Iframe_container">
                     <iframe 
                         className='iframe_gmaps'
@@ -28,7 +31,8 @@ class Ubicanos extends React.Component {
                         id='google_maps'
                     />
                 </div>
-            </React.Fragment>
+                <p>Urbanizacion Las Flores Mz E lt 4, Victor Larco, Trujillo</p>
+            </div>
         )
     }
 }
