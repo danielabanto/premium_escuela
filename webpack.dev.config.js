@@ -11,7 +11,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: 'http://localhost:3000',
+        publicPath: 'http://localhost:3000/',
         chunkFilename: 'js/[id].[chunkhash].js'
     },
     devServer: {

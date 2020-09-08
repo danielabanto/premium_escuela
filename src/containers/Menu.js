@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 import './scss/Menu.scss'
 
@@ -13,11 +13,11 @@ const Menu = (props) => {
             </header>
             <div className="navbar">
                 <ul>
-                    <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/somos">QUIENES SOMOS</Link></li>
-                    <li><Link to="/servicios">NUESTROS SERVICIOS</Link></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#somos">QUIENES SOMOS</a></li>
+                    <li><a href="#servicios">NUESTROS SERVICIOS</a></li>
                     {/* <li><a href="https://wa.me/51942301576?text=Hola%20amigo" target="_blank">WS</a></li> */}
-                    <li><Link to="/ubicanos">UBICANOS</Link></li>
+                    <li><a href="#ubicanos">UBICANOS</a></li>
                 </ul>
             </div>
             {props.children}

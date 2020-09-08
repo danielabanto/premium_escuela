@@ -1,15 +1,18 @@
 .Footer_container {
-    margin-top: 30px;
-    background-color: #958f3b;
-}
-#footer .container{
+    background-color: #252525;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: space-between;
-    /* padding-bottom: 10px; */
-    /* margin-bottom: 20px; */
+    padding: 10px 40px;
 }
+// #footer .container{
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 100%;
+//     justify-content: space-between;
+//     /* padding-bottom: 10px; */
+//     /* margin-bottom: 20px; */
+// }
 #footer div p {
     color: white;
     margin: 5px auto;
@@ -32,15 +35,16 @@
     padding: 10px 10px 20px 10px;
     
 }
-.input_container input {
+.input_container textarea {
     border: none;
     outline: none;
     padding-left: 25px;
-    // background-image: url('img/whatssapp.jpg');
+    background-image: url('../../img/whatssapp.jpg');
     background-repeat: no-repeat;
     background-position: 3px;
     background-size: 15px;
-    height: 20px;
+    height: 30px;
+    width: 400px;
     border-radius: 5px;
 }
 .img_email {
@@ -69,5 +73,6 @@
 }
 .img_redes {
     width: 40px;
-    padding: 0px 10px;
+    // height: 40px;
+    // padding: 0px 10px;
 }

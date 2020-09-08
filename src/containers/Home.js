@@ -3,13 +3,13 @@ import { Carousel } from 'react-bootstrap'
 import Somos from './Somos.js'
 import Servicios from './Servicios.js'
 import Ubicanos from './Ubicanos.js'
-import Contacto from './Contacto.js'
+// import Contacto from './Contacto.js'
 import './scss/Home.scss'
 
 const Home = () => {
     return (
         <>
-        <div className="Home_container">
+        <div className="Home_container" id="home">
             <Carousel className="carousel_container">
                 <Carousel.Item className="bg-arreglo bg1"> 
                     {/* <img
@@ -17,19 +17,29 @@ const Home = () => {
                     src=""
                     alt="First slide"
                     /> */}
-                    {/* <Carousel.Caption>
-                        <h3>Galeria</h3>
-                        <p>Galeria</p>
-                    </Carousel.Caption> */}
+                    <Carousel.Caption>
+                        <h3>Calidad</h3>
+                        <p>Siempre hacia la excelencia tanto en el resultado como la experiencia de nuestros clientes</p>
+                    </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item className="bg-arreglo bg2" />
-                <Carousel.Item className="bg-arreglo2 bg3" />
+                <Carousel.Item className="bg-arreglo bg2">
+                    <Carousel.Caption>
+                        <h3>Confianza</h3>
+                        <p>Paso a paso para alcanzar tus objetivos de manejo en el menor tiempo</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item className="bg-arreglo2 bg3">
+                    <Carousel.Caption>
+                        <h3>Seguridad</h3>
+                        <p>Cumplimos con todos los protocolos por tu bienestar</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
             </Carousel>
         </div>
             <Somos/>
             <Servicios/>
             <Ubicanos/>
-            <Contacto/>
+            {/* <Contacto/> */}
     </>
             
             
