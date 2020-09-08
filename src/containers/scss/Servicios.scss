@@ -1,6 +1,11 @@
 .Servicios_container{
     // background-color: lightgreen;
     padding: 10px 2% 10px 2%;
+    background-image: url('./../../img/pexels_fondo2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
 .Servicios_container h2{
     text-align: center;
@@ -16,7 +21,7 @@
 .Servicios_tarjeta {
     border: 1px solid gray;
     border-radius: 5px;
-    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.87);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.87);
     padding: 40px 20px;
     line-height: 2.8em;
 }

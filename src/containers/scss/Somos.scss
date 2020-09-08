@@ -1,7 +1,12 @@
 .Somos_container {
     display: flex;
     align-items: center;
-    // background-color: lightblue;
+    // background-color: #414141;
+    background-image: url('./../../img/pexels_fondo.jpg');
+    // background: linear-gradient(90deg, rgba(24,24,25,1) 0%, rgba(72,72,77,1) 22%, rgba(87,87,91,1) 79%, rgba(20,19,19,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     padding: 50px 150px;
     margin: 0 auto;
@@ -14,18 +19,25 @@
     height: 650px;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
     
 }
 .Somos_details {
     padding: 30px 20px 70px 20px;
-    border: 2px solid gray;
+    margin: 0 20px;
+    // border: 2px solid gray;
+    // border-radius: 20px;
+    width: 550px;
     height: 650px;
+    // background-color: white;
+    
+    color: white;
 }
 .Somos_title {
-   font-size: 40px;
+   font-size: 34px;
    text-align: center;
    padding-bottom: 40px;
 }
 .Somos_p {
-    font-size: 32px;   
+    font-size: 30px;
 }
