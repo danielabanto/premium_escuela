@@ -39,11 +39,11 @@ class Ubicanos extends React.Component {
                     <div className="Ubicanos_details">
                         <div className="Ubicanos_detail">
                             <img className="ubicanos_icono" src={telefono}/>
-                            <p> 942301576</p>
+                            <p> 956386938</p>
                         </div>
                         <div className="Ubicanos_detail">
                             <img className="ubicanos_icono" src={email}/>
-                            <p>premium@premium.com</p>
+                            <p>premium@gmail.com</p>
                         </div>
                         <div className="Ubicanos_detail">
                             <img className="ubicanos_icono" src={direccion}/>
