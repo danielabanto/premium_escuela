@@ -2,7 +2,6 @@ import React from 'react'
 import facebook from './../img/facebook.svg'
 import './scss/Footer.scss'
 
-
 class Footer extends React.Component {
     state = {
         mensaje: ''

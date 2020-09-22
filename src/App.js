@@ -1,30 +1,23 @@
 import React from 'react';
-// import { BrowserRouter, Route, Switch} from 'react-router-dom';
-
-// import Contacto from './containers/Contacto.js';
-// import Servicios from './containers/Servicios.js';
-// import Somos from './containers/Somos.js';
-// import Ubicanos from './containers/Ubicanos.js';
-import Home from './containers/Home.js';
-import Menu from './containers/Menu.js';
+import Hero from './components/Hero'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Somos from './components/Somos'
+import Servicios from './components/Servicios'
+import Contacto from './components/Contacto'
 
 function App() {
   return (
-    // <BrowserRouter>
       <div className="container_full">
-        <Menu>
+        <Header />
         <div className="container_page">
-          <Home />
-          {/* <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/servicios" component={Servicios} />
-            <Route exact path="/somos" component={Somos} />
-            <Route exact path="/ubicanos" component={Ubicanos} />
-          </Switch> */}
+          <Hero />
+          <Somos />
+          <Servicios />
+          <Contacto />
         </div>
-        </Menu>
+        <Footer />
       </div>
-    // </BrowserRouter>
   );
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
+import somos_img from './../img/somos_img.jpg'
 import './scss/Somos.scss'
 
 const Somos = () => {
 	return(
 		<div className="Somos_container" id="somos">
 			<figure>
-				<img className="Somos_img"src="https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/11/rob-schneider-uk-premiere-bedtime-stories-01-450x634.jpg" alt="auto"/>
+				<img className="Somos_img"src={somos_img} alt="auto"/>
 			</figure>
 			<div className="Somos_details">
 				<h2 className="Somos_title">NOSOTROS</h2>

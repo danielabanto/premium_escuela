@@ -1,11 +1,11 @@
 import React from 'react';
 import Loader from './../assets/Loader'
-import './scss/Ubicanos.scss'
+import './scss/Contacto.scss'
 import telefono from './../img/telefono.png'
 import email from './../img/email.png'
 import direccion from './../img/ubicacion.png'
 
-class Ubicanos extends React.Component {
+class Contacto extends React.Component {
     constructor(props) {
         super(props)
         this.state = { loading: true }
@@ -56,4 +56,4 @@ class Ubicanos extends React.Component {
     }
 }
 
-export default Ubicanos;
+export default Contacto;

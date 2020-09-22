@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { Fragment} from 'react';
 import { Carousel } from 'react-bootstrap'
-import Somos from './Somos.js'
-import Servicios from './Servicios.js'
-import Ubicanos from './Ubicanos.js'
-// import Contacto from './Contacto.js'
-import './scss/Home.scss'
+import './scss/Hero.scss'
 
-const Home = () => {
+const Hero = () => {
     return (
-        <>
+    <Fragment>
         <div className="Home_container" id="home">
             <Carousel className="carousel_container">
                 <Carousel.Item className="bg-arreglo bg1"> 
@@ -17,36 +13,29 @@ const Home = () => {
                     src=""
                     alt="First slide"
                     /> */}
-                    <Carousel.Caption>
+                    <Carousel.Caption className="caption_container">
                         <h3>Calidad</h3>
                         <p>Siempre hacia la excelencia tanto en el resultado como la experiencia de nuestros clientes</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="bg-arreglo bg2">
-                    <Carousel.Caption>
+                    <Carousel.Caption className="caption_container">
                         <h3>Confianza</h3>
                         <p>Paso a paso para alcanzar tus objetivos de manejo en el menor tiempo</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="bg-arreglo2 bg3">
-                    <Carousel.Caption>
+                    <Carousel.Caption className="caption_container">
                         <h3>Seguridad</h3>
                         <p>Cumplimos con todos los protocolos por tu bienestar</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
         </div>
-            <Somos/>
-            <Servicios/>
-            <Ubicanos/>
-            {/* <Contacto/> */}
-    </>
-            
-            
-        
+    </Fragment>
     )
 }
-export default Home;
+export default Hero;
 
 
 {/* <img className="img_premium" src="https://uiy9za.ch.files.1drv.com/y4mq5s_U2WysPaMgWBmQ7QOWW7n0E--d0MGrbem7LHuWFiq3X1QdfB2HTUW1L4Gxg63cxu1_myLda5d0KYZUpprIohSoRpwXuGUPPUf_1Zb4BIxAqxkJo_L6iFg8ja41YagOvuhEKsQScaUCGrnEl2b2iuRmzqXq8xv-9oLptkEO4CTbuZE3izs4xUSDSwZGhj2QrXr8Bzp-9qv9j62G2-7ig?width=1080&height=810&cropmode=none" />
