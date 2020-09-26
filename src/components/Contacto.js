@@ -39,7 +39,7 @@ class Contacto extends React.Component {
                     <div className="Ubicanos_details">
                         <div className="Ubicanos_detail">
                             <img className="ubicanos_icono" src={telefono}/>
-                            <p> 956386938</p>
+                            <p> 972290613</p>
                         </div>
                         <div className="Ubicanos_detail">
                             <img className="ubicanos_icono" src={email}/>

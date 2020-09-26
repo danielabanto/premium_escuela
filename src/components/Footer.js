@@ -7,7 +7,7 @@ class Footer extends React.Component {
         mensaje: ''
     }
     handleClick = () => {
-        const win = window.open(`https://wa.me/51942301576?text=${this.state.mensaje}`, '_blank');
+        const win = window.open(`https://wa.me/51972290613?text=${this.state.mensaje}`, '_blank');
         win.focus();
         this.setState({
             mensaje: "" 

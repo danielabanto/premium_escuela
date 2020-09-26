@@ -11,7 +11,6 @@ const Header = () => {
         addEventListener('resize', cambiar)
     }, [window.innerWidth])
     const cambiar = () => {
-        
         const menu = document.getElementById('menu')
         if (window.innerWidth<768) {
             setSomos('NOSOSTROS')
@@ -20,17 +19,38 @@ const Header = () => {
             setSomos('QUIENES SOMOS')
             setServicios('NUESTROS SERVICIOS')
         }
-        if (window.innerWidth<481){
-            document.getElementById('navbar_list').classList.add('none')
-        }
+    }
+    const animationIn = (element) => {
+        element.animate([
+            {
+                left: '0'
+            },
+        ],{
+            duration: 500,
+            fill: 'forwards'
+        })
+    }
+    const animationOut = (element) => {
+        element.animate([
+            {
+                left: '-100vw'
+            },
+        ],{
+            duration: 500,
+            fill: 'forwards'
+        })
     }
     
-    const handleClickImg = (e) =>{
-        document.getElementById('navbar_list').classList.toggle('none')
-    }
     const handleClick = (e) =>{
-        document.getElementById('navbar_list').classList.toggle('none')
+        const navbar_list = document.getElementById('navbar_list')
+        navbar_list.classList.toggle('left')
+        if (navbar_list.classList.contains('left')){
+            animationIn(navbar_list)
+        } else {
+            animationOut(navbar_list)
+        }
     }
+
     return(
         <Fragment>
         <header>
@@ -38,12 +58,12 @@ const Header = () => {
             <h2>ESCUELA DE CONDUCTORES</h2>
         </header>
         <div className="navbar">
-            <img src={menu} onClick={handleClickImg} className="hamburger_menu" id="menu"/>
+            <img src={menu} onClick={handleClick} className="hamburger_menu" id="menu"/>
             <ul id="navbar_list" className="navbar_list">
-                <li><a onClick={handleClick} className="navbar_element" href="#home">HOME</a></li>
-                <li><a onClick={handleClick} className="navbar_element" href="#somos">{somos}</a></li>
-                <li><a onClick={handleClick} className="navbar_element" href="#servicios">{servicios}</a></li>
-                <li><a onClick={handleClick} className="navbar_element" href="#ubicanos">UBICANOS</a></li>
+                <li><a onClick={handleClick} className="navbar_item" href="#home">HOME</a></li>
+                <li><a onClick={handleClick} className="navbar_item" href="#somos">{somos}</a></li>
+                <li><a onClick={handleClick} className="navbar_item" href="#servicios">{servicios}</a></li>
+                <li><a onClick={handleClick} className="navbar_item" href="#ubicanos">UBICANOS</a></li>
             </ul>
         </div>
         </Fragment>
